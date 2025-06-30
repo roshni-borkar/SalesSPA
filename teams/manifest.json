@@ -1,0 +1,44 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.11",
+    "version": "2.0.0",
+    "id": "0d8c4ad1-9e41-44f7-8442-1a29a614d63e",
+    "packageName": "com.yourcompany.salesapp",
+    "developer": {
+      "name": "Sharun",
+      "websiteUrl": "https://sachagroup.sharepoint.com/sites/StagingHuman",
+      "privacyUrl": "https://sachagroup.sharepoint.com/sites/StagingHuman",
+      "termsOfUseUrl": "https://sachagroup.sharepoint.com/sites/StagingHuman"
+    },
+    "name": {
+      "short": "Sales Tracker",
+      "full": "Sales Management App"
+    },
+    "description": {
+      "short": "Track Opportunities, Quotes, and POs",
+      "full": "Manage and track Opportunities, Quotations, and Purchase Orders in SharePoint via a Teams personal app."
+    },
+    "icons": {
+      "outline": "outline-icon.png",
+      "color": "color-icon.png"
+    },
+    "accentColor": "#176D7E",
+    "staticTabs": [
+      {
+        "entityId": "salesTab",
+        "name": "Sales",
+        "contentUrl": "https://sachagroup.sharepoint.com/sites/StagingHuman/_layouts/15/workbench.aspx?debugManifestsFile=https://localhost:4321/temp/manifests.js",
+        "websiteUrl": "https://sachagroup.sharepoint.com/sites/StagingHuman",
+        "scopes": ["personal"]
+      }
+    ],
+    "permissions": [
+      "identity",
+      "messageTeamMembers"
+    ],
+    "validDomains": [
+      "sachagroup.sharepoint.com",
+      "localhost"
+    ]
+  }
+  

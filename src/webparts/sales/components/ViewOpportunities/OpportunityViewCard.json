@@ -1,0 +1,21 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.5",
+  "body": [
+    { "type": "TextBlock", "weight": "Bolder", "text": "Opportunity Details" },
+    { "type": "TextBlock", "text": "Business: ${account}" },
+    { "type": "TextBlock", "text": "Stage: ${stage}" },
+    { "type": "TextBlock", "text": "Owner: ${owner}" },
+    { "type": "TextBlock", "text": "Close Date: ${closeDate}" },
+    { "type": "TextBlock", "text": "Probability: ${probability}%" },
+    { "type": "TextBlock", "text": "Revenue: ${revenue}" }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Edit",
+      "data": { "action": "edit" }
+    }
+  ]
+}
