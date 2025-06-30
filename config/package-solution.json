@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "sales-app-client-side-solution",
+    "id": "b539204e-4f74-4250-a5e4-fab29a14664b",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "SalesApp description"
+      },
+      "longDescription": {
+        "default": "SalesApp description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "webApiPermissionRequests": [
+  {
+    "resource": "Microsoft Graph",
+    "scope": "User.ReadBasic.All"
+  }
+],
+    "features": [
+      {
+        "title": "sales-app Feature",
+        "description": "The feature that activates elements of the sales-app solution.",
+        "id": "ea74f989-92ec-4163-89b0-ef964118cdfd",
+        "version": "1.0.0.0"
+      }
+    ]
+    
+  },
+  "paths": {
+    "zippedPackage": "solution/sales-app.sppkg"
+  }
+}
